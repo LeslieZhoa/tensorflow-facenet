@@ -35,7 +35,8 @@ python train.py进行训练<br><br>
 将你的身份图片放置到pictures目录下<br><br>
 将目录cd到test下<br>
 python embeddings.py生成身份图像的embeddings并存储<br>
-python test.py测试摄像头读取图像的身份，可以自行改变[阈值的选取](https://github.com/LeslieZhoa/tensorflow-facenet/blob/master/test/test.py#L22)<br>
+python test.py测试摄像头读取图像的身份，可以自行改变[阈值的选取](https://github.com/LeslieZhoa/tensorflow-facenet/blob/master/test/test.py#L22)<br><br>
+如果有什么问题还请留言多多指教！<br>
 ## 结果展示
 结果是我通过摄像头的身份验证，其中身份图像来源于百度图片，手机上的图片来源于新浪微博。<br>
 ![](https://github.com/LeslieZhoa/tensorflow-facenet/blob/master/pictures/out.mp4_20181204_201824.gif)
