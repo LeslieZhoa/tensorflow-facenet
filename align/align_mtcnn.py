@@ -75,12 +75,11 @@ def main():
                         errorMessage = '{}: {}'.format(image_path, e)
                         print(errorMessage)
                     else:
-                        if img.ndim<2:
+                        if img.ndim<3:
                             print('图片不对劲 "%s"' % image_path)
                             text_file.write('%s\n' % (output_filename))
                             continue
-                        if img.ndim == 2:
-                            img = facenet.to_rgb(img)
+                        
                         img = img[:,:,0:3]
                         #通过mtcnn获取人脸框
                         try:
