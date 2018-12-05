@@ -24,7 +24,7 @@ pip install h5py测试时候存储身份图片的embeddings<br>
 ### 代码介绍
 align下放置的是MTCNN的相关代码，align_mtcnn.py是筛选图像的主程序，其他代码具体都取自[我的MTCNN的项目](https://github.com/LeslieZhoa/tensorflow-MTCNN)<br><br>
 data下放置的是训练数据以及筛选后的数据<br><br>
-pictures下放置的是你需要对比的身份图像<br><br>
+pictures下放置的是你需要对比的身份图像，特别强调文件名称要是全英文路径，opencv识别中文路径和添加中文比较费劲我就没加这一功能。<br><br>
 test下放置的embeddings.py是为了生成身份图像的embeddings省得每次测试都要重新生成,test.py是通过摄像头来识别人的身份<br><br>
 train里放置的config.py是一些参数设定，inception_resnet_v1.py是模型主体结构，train.py是训练代码<br>
 ### 下载数据
