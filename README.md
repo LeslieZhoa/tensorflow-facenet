@@ -44,7 +44,8 @@ python test.py测试摄像头读取图像的身份，可以自行改变[阈值�
 如果有什么问题还请留言多多指教！<br>
 ### 注意
 align/utils.py line95 image=tf.cast(image,tf.float32)-127.5/128.0应改为image=(tf.cast(image,tf.float32)-127.5)/128.0<br>
-相应test/test.py line152 scaled=cv2.cvtColor(scaled,cv2.COLOR_BGR2RGB)-127.5/128.0应改为scaled=(cv2.cvtColor(scaled,cv2.COLOR_BGR2RGB)-127.5)/128.0<br><br>
+相应test/test.py line152 scaled=cv2.cvtColor(scaled,cv2.COLOR_BGR2RGB)-127.5/128.0应改为scaled=(cv2.cvtColor(scaled,cv2.COLOR_BGR2RGB)-127.5)/128.0<br>
+test/embeddings.py的line115的scaled =cv2.resize(cropped,(160, 160),interpolation=cv2.INTER_LINEAR)-127.5/128.0改为scaled =(cv2.resize(cropped,(160, 160),interpolation=cv2.INTER_LINEAR)-127.5)/128.0<br><br>
 由于本人失误我的模型应该就是基于此训练的，所以如果要改正需要重新训练模型，不过我想效果应该会更好！<br>
 多谢[@ltpjob](https://github.com/ltpjob)的issues7<br>
 希望大家继续批评指正！！！
