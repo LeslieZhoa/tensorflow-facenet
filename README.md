@@ -27,6 +27,8 @@ data下放置的是训练数据以及筛选后的数据<br><br>
 pictures下放置的是你需要对比的身份图像，特别强调文件名称要是全英文路径，opencv识别中文路径和添加中文比较费劲我就没加这一功能。<br><br>
 test下放置的embeddings.py是为了生成身份图像的embeddings省得每次测试都要重新生成,test.py是通过摄像头来识别人的身份<br><br>
 train里放置的config.py是一些参数设定，inception_resnet_v1.py是模型主体结构，train.py是训练代码<br>
+### ***补充说明***<br>
+其他face loss可参考此[链接](https://github.com/LeslieZhoa/Move-Stone/blob/370264cf71d4ff74f40ef53a80474756c283c204/some_trick.py#L32),包含arcface,cosface,center loss
 ### 下载数据
 如果你想自己训练，下载[CASIA-WebFace数据](https://pan.baidu.com/s/1hQCOD4Kr66MOW0_PE8bL0w)，提取密码是y3wj，多谢[Yang Fang](https://github.com/Yangel-hide)的提供。将CASIA-WebFace解压到data目录下。<br><br>
 如果你想继续我的模型训练或者想纯粹跑一下代码，那么你可以下载我的[训练模型](https://www.jianguoyun.com/p/DdD70RYQv7mYBxjE5YoB)解压里面的模型文件到model目录下。<br>
